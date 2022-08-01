@@ -283,7 +283,7 @@
     #one:checked~.tabs #one-tab,
     #two:checked~.tabs #two-tab,
     #three:checked~.tabs #three-tab {
-        border-bottom: 3px solid rgba(0, 0, 0);
+        background: linear-gradient( rgba(0, 0, 0) 50%, rgba(255, 255, 255, 0.2));
         color: #fff;
         font-size: 20px;
         font-weight: bold;
@@ -575,4 +575,27 @@
         .card1 {
             margin: 20px;
         }
+    }
+    
+    .panel input {
+        border: 1px solid white;
+        background: none;
+        color: white;
+    }
+    
+    .panel select {
+        border: 1px solid white;
+        background: none;
+        color: white;
+    }
+    
+    .panel .input-group input {
+        border: 1px solid white !important;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    .widget-contact-list ul li {
+        list-style: none !important;
+        text-decoration: none;
     }

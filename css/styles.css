@@ -11626,3 +11626,77 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+.widget {
+    color: white !important;
+    padding: 30px;
+}
+
+.widget-contact-list a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-contact-list a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+}
+
+.input-group:hover .hoverTravel {
+    display: flex !important;
+}
+
+.hoverTravel {
+    width: 10%;
+    height: fit-content;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-input {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-19%, 0);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+input {
+    width: 60px;
+    border-radius: 0;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+.spinner {
+    background-color: #1a1814;
+}
+
+.spinner:hover {
+    background: black;
+    color: white;
+}
+
+.spinner:first-child {
+    width: 20px;
+    border-radius: 40px 0 0 40px;
+    color: #086fcf;
+    font-size: 20px;
+}
+
+.spinner:last-child {
+    width: 20px;
+    border-radius: 0 40px 40px 0;
+    color: #086fcf;
+    font-size: 20px;
+}
+
+.tab:hover {
+    color: #64a19d;
+}
