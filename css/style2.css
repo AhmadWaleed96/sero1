@@ -599,3 +599,12 @@
         list-style: none !important;
         text-decoration: none;
     }
+    
+    .widget-contact-list a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .widget-contact-list a:hover {
+        color: rgba(255, 255, 255);
+    }
