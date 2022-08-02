@@ -66,8 +66,8 @@
             <input class="radio" id="one" name="group" type="radio" checked>
             <input class="radio" id="two" name="group" type="radio">
             <div class="tabs">
-                <label class="tab" id="one-tab" for="one">الفنادق</label>
-                <label class="tab" id="two-tab" for="two">مواصلات النقل</label>
+                <label class="tab" id="one-tab" for="one"><i class="fas fa-hotel"></i> الفنادق</label>
+                <label class="tab" id="two-tab" for="two"><i class="fas fa-car"></i> مواصلات النقل</label>
             </div>
             <div class="panels col-10">
 
@@ -333,14 +333,43 @@
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1">
                             <label for="input-group" class="form-label p-1">التفاصيل</label>
                             <div class="input-group" id="input-group">
-                                <input type="text" class="form-control border-0" placeholder="2 عدد الأشخاص">
-                                <input type="text" class="form-control border-0" placeholder="1 عدد الغرف">
+                                <input type="text" class="form-control border-0" placeholder="2 عدد الاشخاص(s)">
+                                <input type="text" class="form-control border-0" placeholder="0 عدد الاطفال(s)">
+                                <input type="text" class="form-control border-0" placeholder="1 عدد الغرف(s)">
                             </div>
-
                         </div>
-                        <div class=" btn1 col-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="btn1 col-12 col-sm-12 col-md-6 col-lg-3">
                             <button type="button" class="btn p-2 w-100">بحث</button>
                         </div>
+                        <!-- <div class="hoverTravel modal bg-light d-none">
+                                <div class="Adults">
+                                    <label for="Adults" class="text-secondary">Adults
+                                            <div class="number-input d-flex">
+                                                <button class="spinner decrement">-</button>
+                                                <input type="number" name="Quantity[47]" value="0" class="qtyInputLoose form-control" min="0">
+                                                <button class="spinner increment">+</button>
+                                            </div>
+                                        </label>
+                                </div>
+                                <div class="Children">
+                                    <label for="Children" class="text-secondary">Children
+                                            <div class="number-input d-flex">
+                                                <button class="spinner decrement">-</button>
+                                                <input type="number" name="Quantity[47]" value="0" class="qtyInputLoose form-control" min="0">
+                                                <button class="spinner increment">+</button>
+                                            </div>
+                                        </label>
+                                </div>
+                                <div class="Room">
+                                    <label for="Room" class="text-secondary">Room
+                                            <div class="number-input d-flex">
+                                                <button class="spinner decrement">-</button>
+                                                <input type="number" name="Quantity[47]" value="0" class="qtyInputLoose form-control" min="0">
+                                                <button class="spinner increment">+</button>
+                                            </div>
+                                        </div>
+                                        </label>
+                                </div> -->
 
                     </div>
                 </div>
@@ -620,10 +649,10 @@
     <section class="com">
         <h1>بالتعاون مع</h1>
         <hr class="container">
-        <div class="images p-5">
-            <a href=""><img src="assets/img/22.svg" alt="" style="width: 150px; height: 150px;"></a>
-            <a href=""><img src="assets/img/logo.svg" alt="" style="width: 150px; height: 150px;"></a>
-            <a href=""><img src="assets/img/WhatsApp Image 2022-06-29 at 8.23.08 PM.svg" alt="" style="width: 150px; height: 150px;"></a>
+        <div class="images d-flex justify-content-center align-content-center align-items-center flex-wrap">
+            <a href=""><img src="assets/img/22.svg" alt="" style="width: 150px; height: 150px; padding: 15px;"></a>
+            <a href=""><img src="assets/img/logo.svg" alt="" style="width: 150px; height: 150px; padding: 15px;"></a>
+            <a href=""><img src="assets/img/WhatsApp Image 2022-06-29 at 8.23.08 PM.svg" alt="" style="width: 150px; height: 150px; padding: 15px;"></a>
         </div>
     </section>
     <!-- Contact-->
@@ -636,7 +665,7 @@
                             <i class="fas fa-envelope text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">الايميل</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50"><a href="#!">info@sero.com.sa</a></div>
+                            <div class="small text-black-50"><a href="mailto:info@sero.com.sa">info@sero.com.sa</a></div>
                         </div>
                     </div>
                 </div>
@@ -646,7 +675,7 @@
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">العنوان</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">طريق الملك عبدالله الفرعي،المدينة المنورة </div>
+                            <div class="small text-black-50"><a href="https://goo.gl/maps/GMU7N2HUF8GMp8NHA">طريق الملك عبدالله الفرعي،المدينة المنورة</a></div>
                         </div>
                     </div>
                 </div>
@@ -656,27 +685,35 @@
                             <i class="fas fa-mobile-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">الهاتف</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">+966920007075</div>
+                            <div class="small text-black-50"><a href="tel:+966920007075">+966920007075</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 m-3 p-0">
-                    <div class="card h-100 p-0">
-                        <div class="card-body text-center p-0">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.232700021362!2d39.6562315!3d24.477392899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bd956a88a17821%3A0x7d186154aecb193f!2sSero%20Company!5e0!3m2!1sar!2ssa!4v1658866368411!5m2!1sar!2ssa"
-                                width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div dir="rtl" class="widget widget-links col-sm-12 col-md-6 col-lg-3">
+                    <h4 class="widget_title text-end" style="border-bottom: 2px solid white;">روابط سريعة</h4>
 
-            <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-instagram"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
+                    <div class="widget-contact-list">
+                        <ul>
+                            <li>
+                                <a href="index.html"> الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href=""> نبذه عن الشركة</a>
+                            </li>
+                            <li>
+                                <a href="">سياسة الخصوصية</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
-        </div>
     </section>
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
@@ -687,6 +724,20 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script>
+        const input = document.querySelector('input[type=number]')
+
+        const increment = () => {
+            input.value = Number(input.value) + 1
+        }
+        const decrement = () => {
+            input.value = Number(input.value) - 1
+        }
+
+        document.querySelector('.spinner.increment').addEventListener('click', increment)
+        document.querySelector('.spinner.decrement').addEventListener('click', decrement)
+    </script>
 </body>
 
 </html>
