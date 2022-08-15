@@ -13,7 +13,7 @@
         .navbar-scroll .navbar-brand,
         .navbar-scroll .nav-link,
         .navbar-scroll .fa-bars {
-            color: #4f4f4f !important;
+            color: black !important;
         }
     }
     
@@ -225,8 +225,8 @@
     }
     
     .panels {
-        background: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 1rem 1rem rgb(0, 0, 0, 0.6);
+        background: rgb(0, 0, 0, 0.5);
+        box-shadow: 0 1rem 1rem rgb(0, 0, 0, 0.2);
         color: white;
         min-height: 200px;
         max-width: 80%;
@@ -472,8 +472,8 @@
     
     @media only screen and (min-width: 1200px) {
         main {
-            height: auto;
-            min-height: 100vh;
+            height: fit-content;
+            min-height: 150vh;
             padding: 50px;
             background-size: 100% 100%;
             background-position: 100% 100%;
@@ -578,21 +578,29 @@
     }
     
     .panel input {
-        border: 1px solid white;
-        background: none;
-        color: white;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.6);
+        color: black;
     }
     
     .panel select {
-        border: 1px solid white;
-        background: none;
-        color: white;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.6);
+        color: black;
     }
     
     .panel .input-group input {
-        border: 1px solid white !important;
-        color: white;
+        border: 1px solid black !important;
+        color: black;
         border-radius: 5px;
+    }
+    
+    .panel .input-group input::placeholder {
+        color: black;
+    }
+    
+    .panel input #date-out ::placeholder {
+        color: transparent;
     }
     
     .widget-contact-list ul li {
